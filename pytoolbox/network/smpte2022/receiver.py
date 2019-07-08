@@ -478,7 +478,7 @@ class FecReceiver(object):
                     lostogram_counter = 0
                     del self.medias[media.sequence]
                     if self.output:
-                        self.output.write(media.payload)
+                        self.output.write(media)
                 else:
                     self.media_missing += 1
                     lostogram_counter += 1
